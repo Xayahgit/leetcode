@@ -7,3 +7,15 @@ var twoSum = function(nums,target) {
     }
   }
 }
+
+var twoSum = function(nums,t) {
+  let s = new Set();
+  for(item of nums) {
+    if(!s.has(t-item)) {
+      s.add(item)
+    }else {
+      return [item,t-item]
+    }
+  }
+  return []
+}

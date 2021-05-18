@@ -6,3 +6,4 @@ var reverseWords = function(s) {
 var reverseStr = function(s) {
   return s.split("").reverse().join(' ').trim()
 }
+return s.split("").reverse.join("").trim()

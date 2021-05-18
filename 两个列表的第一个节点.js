@@ -17,3 +17,14 @@ var langmanxiangyu = function(headA,headB) {
   }
   return p1
 }
+
+ 
+var lmxy = function(l1,l2) {
+  let p1 = headA;
+  let p2 = headB;
+  while(p1!==p2) {
+    p1 = p2==null? headB:p1.next;
+    p2 = p1==null? headA:p2.next;
+  }
+  return p1
+}

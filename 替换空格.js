@@ -5,3 +5,8 @@ var replaceSpace = function(s) {
 }
 
 console.log(replaceSpace(str))
+
+var replaceSpace(s) {
+  return s.replaceAll(" ",'%20')
+}
+

@@ -7,3 +7,7 @@ var reverseStr = function(s) {
   return s.split("").reverse().join(' ').trim()
 }
 return s.split("").reverse.join("").trim()
+
+var reverseStr = function(s) {
+  return s.split("").reverse().join("").trim()
+}

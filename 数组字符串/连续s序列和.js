@@ -24,11 +24,15 @@ var fCS = function (target) {
     }
     while(sum>=target) {
       if(sum === target) {
-        return ans.push([...temp])
+        ans.push([...temp])
       }
       sum = sum-temp.shift();
     }
   }
   return ans
 }
+
+
+
+
 

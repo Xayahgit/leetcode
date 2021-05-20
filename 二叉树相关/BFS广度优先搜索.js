@@ -14,3 +14,21 @@ var levelOrder = function(root) {
     res(root, 0) //执行代码
     return ans
 };
+
+var BFS = function(root) {
+  var ans = []
+  const res = (root,k) => {
+    if(!root) return
+    if(k === ans.length) {
+      ans.push([])
+    }
+    ans[k].push(root.val)
+    res(root.left,k+1)
+    res(root.right,k+1)
+  }
+  res(root,0)
+  return ans
+
+
+
+}

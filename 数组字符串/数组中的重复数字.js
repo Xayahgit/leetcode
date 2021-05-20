@@ -17,3 +17,13 @@ var findRepeatNum = function(nums) {
     map.set(num,1)
   }
 }
+
+var repeatNum = function(nums) {
+  let map = new Map();
+  for(num of nums) {
+    if(map.has(num)) {
+      return num
+    }
+    map.set(num,1)
+  }
+}

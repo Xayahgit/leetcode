@@ -8,3 +8,15 @@ var erjinzhi = function(s) {
   }
   return sum;
 }
+
+
+var erjz = function(s) {
+  let sum = 0;
+  s = s.toString(2).split("")
+  for(num of s) {
+    if(num==1) {
+      sum++
+    }
+  }
+  return sum
+}

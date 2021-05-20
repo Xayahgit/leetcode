@@ -6,3 +6,11 @@ var yq = function(n,m) {
   }
   return res
 }
+
+var yq = function(n,m) {
+  let res = 0
+  for(let i=2;i<n;i++) {
+    res = (m+res) % i
+  }
+  return res
+}

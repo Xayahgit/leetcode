@@ -31,3 +31,16 @@ var twoSum  = function(nums,t) {
   }
   return []
 }
+
+
+var twoSum = function(nums,t) {
+  let s =new Set()
+  for(num pf nums) {
+    if(!s.has(num)) {
+      s.add(num)
+    }else {
+      return [num,t-num]
+    }
+  }
+  return []
+}

@@ -29,6 +29,18 @@ var searchK = function(root,k) {
   
 };
 
+var searchK = function(root,k) {
+  let arr= new Set()
+  const dfs = (root) => {
+    arr.add(root.val)
+    dfs(root.left)
+    dfs(root.right)
+  }
+  dfs(root);
+  let n = Array.from(arr).sort((a,b) => b-a);
+  return n[k-1]
+}
+
 
   
   

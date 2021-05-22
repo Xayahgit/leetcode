@@ -8,3 +8,8 @@ var maxDepth = function(proot) {
   if(!proot) return 0;
   return Math.max(maxDepth(proot.left),maxDepth(proot.right)) +1
 }
+
+var maxDepth = function(root) {
+  if(!root)  {return 0}
+  return Math.max(maxDepth(root.left),maxDepth(root.right)) +1
+}

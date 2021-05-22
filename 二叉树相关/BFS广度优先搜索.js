@@ -28,7 +28,5 @@ var BFS = function(root) {
   }
   res(root,0)
   return ans
-
-
-
 }
+

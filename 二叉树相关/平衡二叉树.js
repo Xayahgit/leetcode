@@ -1,26 +1,19 @@
-var balanceTree = function(root) {
-  let result = true;
-  (function dfs(root){
-    if(!node) return 0;
-    let left = dfs(node.left) + 1;
-    let right = dfs(node.right) + 1;
-    if(Math.abs(left-right) > 1) {
-      return false;
-    }
-    return Math.max(left,right);
-  })(root)
-  return result;
-}
+var isBalanced = function(root) {
+  let ans = true; 
+  function isbalance(node) {
+    if (ans === true) {
+      if (node === null) return 0;
+    
+      let left = isbalance(node.left),
+          right = isbalance(node.right);
 
-var isBalance = function(root) {
-  let res = true;
-  const dfs = function(node) {
-    if(!node) return 0;
-    let left = dfs(node.left) + 1;
-    let right = dfs(node.right) + 1;
-    if(Math.abs(left - right) > 1) return false
-    return Math.max(left,right)
+      if (Math.abs(left - right) > 1) ans = false;
+
+      return Math.max(left, right) + 1;
+    }
   }
-  dfs(root)
-  return result
-}
+  
+  isbalance(root);
+  
+  return ans;
+};

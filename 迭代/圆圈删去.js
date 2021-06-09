@@ -23,3 +23,11 @@ var cirCle = function(n,m) {
   }
   return res
 }
+
+var cil = function(n,m) {
+  let res = 0;
+  for(let i=2;i<=n,i++) {
+    res = (res + n) % i
+  }
+  return res
+}

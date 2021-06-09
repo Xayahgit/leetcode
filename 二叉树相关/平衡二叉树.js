@@ -12,9 +12,7 @@ var isBalanced = function(root) {
       return Math.max(left, right) + 1;
     }
   }
-  
   isbalance(root);
-  
   return ans;
 };
 
@@ -29,15 +27,11 @@ var isBalanced = function(root) {
   }
   // const left = depth(root.left) + 1
   // const right = depth(root.right) + 1
-  if(Math.abs(depth(left) - depth(right)) <= 1 && isBalanced(root.left) && isBalanced(root.right)) {
+  if(Math.abs(depth(root.left) - depth(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right)) {
     return true
   }else {
     return false
   }
- 
-
-  
-
 }
 // 
 // 

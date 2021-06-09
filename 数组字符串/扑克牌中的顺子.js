@@ -6,3 +6,10 @@ var isStraight = function(nums) {
   }
   return nums[4] - nums[zeroCount] < 5
 };
+
+
+// var arr = [0,2,3,0,0,12,0]
+
+// let a = arr.sort((a,b)=>a-b).findIndex(i=>i)
+
+// console.log(a);
